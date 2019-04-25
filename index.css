@@ -1,0 +1,125 @@
+body {
+  background-color: rgb(26, 26, 31);
+}
+
+i {
+  margin-right: 2px;
+}
+
+.bg-dark {
+  background-color: rgb(42, 42, 42) !important;
+}
+
+hr {
+  background-color: white;
+}
+
+.input-group {
+  margin: 0.5rem auto;
+  border: white;
+}
+.input-group-text {
+  background: rgb(42,42,42);
+  background: linear-gradient(131deg,
+                              rgba(42,42,42,1) 0%,
+                              rgba(65,65,65,1) 100%);
+  border: rgb(42, 42, 42);
+
+  color: white;
+
+}
+
+.fa-calendar-alt:before {
+    margin-left: 5px;
+}
+.card {
+  border: none;
+  background: #565656; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,
+                                    #565656 0%,
+                                    #757575 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,
+                                    #565656 0%,
+                                    #757575 100%);/* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,
+                              #565656 0%,
+                              #757575 100%); /* W3C, IE10+, FF16+,
+                                            Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#565656',
+                                            endColorstr='#757575',
+                                            GradientType=1 );
+                                  /* IE6-9 fallback on horizontal gradient */
+  margin: 0.5rem;
+  }
+
+.card-text {
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 4rem;
+  color: white;
+}
+
+.card-header {
+  color: rgb(187, 187, 187);
+  background: rgb(42,42,42);
+  background: linear-gradient(131deg,
+                              rgba(42,42,42,1) 0%,
+                              rgba(65,65,65,1) 100%);
+  /* font-weight: bold; */
+}
+
+.btn-primary {
+  color: rgb(42, 42, 42);
+  background-color: rgb(19, 244, 237);
+  border: none;
+  margin-left: 0.5rem;
+}
+
+.btn-primary:hover {
+  color: rgb(42, 42, 42);
+  background-color: rgb(9, 140, 136);
+  border: none;
+}
+
+.btn-secondary {
+  color: rgb(42, 42, 42);
+  background-color: rgb(19, 244, 237);
+  border: none;
+}
+
+.btn-secondary:hover{
+  color: rgb(42, 42, 42);
+  background-color: rgb(19, 244, 237);
+  border: none;
+}
+
+#title {
+  font-family: 'Oswald', sans-serif !important;
+  color: white;
+}
+
+.col-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.col-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.form-control {
+  max-width: 250px;
+}
+
+#addon-wrapping {
+  width: 10rem;
+}
+
+#instructions {
+  color: white;
+}
+
+#max-date {
+  font-size: 4rem;
+
+}

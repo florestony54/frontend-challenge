@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title>Frontend Test</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous">
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  </head>
+  <body>
+
+
+  <nav class="navbar navbar-dark bg-dark">
+    <h2 id="title" class="navbar-text">Dockless Mobility Dashboard</h2>
+  </nav>
+
+
+<div class="container">
+
+  <!-- Search Component -->
+  <div id="search-component">
+    <!-- Start Date Input -->
+    <div id="start-date" class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="addon-wrapping">
+          Start Date
+          <i class="far fa-calendar-alt"></i>
+        </span>
+      </div>
+      <input type="date" id="start" class="form-control col-6"
+             name="trip-start"
+             value="2018-07-22"
+             min="2000-01-01" max="2019-04-17">
+    </div>
+    <!-- End Date Input -->
+    <div id="start-date" class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="addon-wrapping">
+          End Date
+          <i class="far fa-calendar-alt"></i>
+        </span>
+      </div>
+
+      <input type="date" id="end" class="form-control col-6"
+             name="trip-start"
+             value="2018-07-22"
+             min="2000-01-01" max="2019-04-17">
+    </div>
+    <!-- Vehicle Selector Buttons -->
+    <span href="#" id="bicycle" class="btn btn-primary">
+      <i class="fas fa-bicycle"></i>
+      <span class="vehicle-name">Bike</span>
+    </span>
+
+    <span id="scooter" class="btn btn-primary">
+      <i class="fas fa-bolt"></i>
+      <span class="vehicle-name">Scooter</span>
+    </span>
+    <span id="all" class="btn btn-primary">
+      <span class="vehicle-name">All</span>
+    </span>
+  </div>
+  <!-- End of Search Component -->
+
+  <hr>
+
+    <!-- Data Cards -->
+    <div class="row d-flex justify-content-center">
+      <!-- Card 1 -->
+      <div class="card col-12 col-sm-3">
+        <div class="card-header">
+          <i class="fas fa-tachometer-alt"></i>
+          Total Miles
+        </div>
+        <div class="card-body">
+          <p class="card-text" id="total-miles">0</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card col-12 col-sm-3">
+        <div class="card-header">
+          <i class="fas fa-road"></i>
+          Total Trips
+        </div>
+        <div class="card-body">
+          <p class="card-text" id="total-trips">0</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card col-12 col-sm-3">
+        <div class="card-header">
+          <i class="fas fa-bicycle"></i>
+          Devices Used
+        </div>
+        <div class="card-body">
+          <p class="card-text" id="unique-ids">0</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+      <!-- Card 4 -->
+      <div class="card col-12 col-sm-3">
+        <div class="card-header">
+          <i class="fas fa-stopwatch"></i>
+          Average Minutes Per Trip
+        </div>
+        <div class="card-body">
+          <p class="card-text" id="trip-duration">0</p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card col-12 col-sm-3">
+        <div class="card-header">
+          <i class="fas fa-map-marked-alt"></i>
+          Average Miles Per Trip
+        </div>
+        <div class="card-body">
+          <p class="card-text" id="average-miles">0</p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card col-12 col-sm-3">
+        <div class="card-header">
+          <i class="far fa-map"></i>
+          Average Miles Per Day
+        </div>
+        <div class="card-body">
+            <p class="card-text" id="daily-miles">0</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="row d-flex justify-content-center">
+      <div class="card col-12 col-sm-4">
+        <div class="card-header">
+          <i class="fas fa-calendar-day"></i>
+          Date with Most Miles
+        </div>
+        <div class="card-body">
+            <p class="card-text" id="max-date">0</p>
+        </div>
+      </div>
+    </div>
+    <!-- End of Data Card Group -->
+    </div>
+
+    <!-- JQuery -->
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js">
+    </script>
+    <!-- Index.js -->
+    <script type="text/javascript" src="index.js"></script>
+    <!-- Bootstrap Scripts -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous">
+    </script>
+  </body>
+</html>
