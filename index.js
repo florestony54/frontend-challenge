@@ -24,7 +24,7 @@ function doClick(e) {
         url: "https://data.austintexas.gov/resource/7d8e-dm7r.json",
         type: "GET",
         data: {
-            "$limit" : 10000
+            "$limit" : 50000
         },
         success: function (data, textStatus) {
             $(".result").html(data);
